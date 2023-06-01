@@ -3,15 +3,45 @@
 <head>
 <meta charset="utf-8">
 <title> For You</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
 
 <style>
+
+  @keyframes neon {
+    0% {
+      text-shadow: 0 0 10px #fff;
+    }
+    50% {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff0000, 0 0 40px #ff4000, 0 0 50px #ea0000, 0 0 60px #df0000, 0 0 70px #d11507, 0 0 80px #fb1f1e;
+    }
+    100% {
+      text-shadow: 0 0 10px #fff;
+    }
+  }
+
+  .neon-text {
+    display: none;
+    font-size: 80px;
+    color: #fff;
+    animation: neon 1.5s infinite;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
     body{
         background-color: #c4bdf3;
     }
 
     h1{font-size: 70px;text-align: center;font-family: 'Times New Roman', Times, serif;}
-
+    .intro{
+      text-align: justify;
+      font-size: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-bottom: 200px;
+      margin-top: 100px;
+    }
     .texto-oculto1{
       display: none;
       text-align: justify;
@@ -283,10 +313,31 @@
         font-size: 16px;
         cursor: pointer;
     }
+
+    .btn8{
+      display: none;
+      height: 150px;
+      width: 200px;
+      margin-left: 45%;
+      border-radius: 40%;
+      color: #fff;
+      font-size: 30px;
+      background-color: #ea0000;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      font-size: 16px;
+      cursor: pointer;
+  }
   </style>
   </head>
 <body>
-<h1>...</h1>
+<h1>PARA MINHA AMADA RAQUEL</h1>
+<p class="intro">Tentativa de resumir um tanto de coisas em um simples "site". Clique nos livros,
+  e a história irá se revelar aos poucos. Quando for ler isso, espero que já tenha ouvido de mim...  </p>
 <button type="button" onclick="mostrarTexto()"class="btn1" id="btn1">
 <img src="imag.jpg" style="width:190px;height:140px;border-radius:40%">
 </button>
@@ -401,10 +452,12 @@
                 <p id="texto6" class="texto-oculto6">
                     Por muito tempo - na verdade até hoje - penso no dia da livraria. E é, eu demorei muito pra fazer algo a respeito kk. Afinal, já tem praticamente 1 ano que aconteceu. 
                     Mas se tivéssemos ido além ali, talvez hoje não estaríamos aqui. Ou sim, quem vai saber né? Os meses que se seguiram após julho não reservaram nada de muito fantástico.
-                     Mas conversávamos todos os dias. Sim, eu queria mais, sempre quis, mas entrei na zona de conforto sabe. O maldito impasse, questionamentos, "será que ela gosta de mim?", 
-                     "E se não for isso mesmo?", tudo isso me fazia adiar a temida hora. Do dia da livraria até a próxima vez que nos encontraríamos, foram uns 4 meses. Naquele 02 de novembro, 
-                     infelizmente não estava com a cabeça 100% no rolê, mas até que foi legal. Só de estar com você, já é motivo pra me fazer sorrir. Contudo, eu não podia mais guardar pra mim 
-                     o que sentia por você. EU PRECISAVA. Queria esperar até a assembleia, pra depois falar. Mas seriam quase 3 meses de espera. Não dava mais. E quando se tornou impossível me conter, 
+                     Mas conversávamos todos os dias. Sim, eu queria mais, sempre quis, mas entrei na zona de conforto, sabe. O maldito impasse, questionamentos, "será que ela gosta de mim?", 
+                     "E se não for isso mesmo?", tudo isso me fazia adiar a temida hora. Aquela maldita insegurança, herdada de alguns fantasmas de outrora. Mas você não tinha nada a ver com isso.
+                      Do dia da livraria até a próxima vez que nos encontraríamos, foram uns 4 meses. Ali, posso dizer que eu desconfiava uns 50% que você também tava gostando de mim, mas eu tava 
+                      como medo de arriscar. Naquele 02 de novembro, infelizmente não estava com a cabeça 100% no rolê, mas até que foi legal. AAHH, eu queria ter te dado
+                      um abraço na hora d eir embora, mas não rolou. Todavia, só de estar com você, já foi motivo pra me fazer sorrir. É sério, pode soar deveras piegas, mas é verdade, sou um bobo apaixonado.
+                      Contudo, eu não podia mais guardar pra mim o que sentia por você. EU PRECISAVA. Queria esperar até a assembleia, pra depois falar. Mas seriam quase 3 meses de espera. Não dava mais. E quando se tornou impossível me conter, 
                      talvez da forma mais aleatória, inesperada e desajeitada possível, eu te contei. Não diretamente, não da forma que eu queria, mas eu contei... seria uma declaração?</p>
                 
             <button type="button" onclick="mostrarTexto7()"class="btn7" id="btn7">
@@ -429,7 +482,14 @@
                 sequer havia mencionado essa palavra né, se referindo a nós dois, Ela antes parecia meio pesada para mim. Mas depois daquele dia... as vezes eu penso
                 em tantas coisas sabe, mas já foi. Mesmo não tendo feito o que eu REALMENTE queria, tendo travado mais do que Windows 11 em Pc da positivo, ter esperado foi bom.
                 <br><br><br>
-                
+
+                A questão toda é que, dali em diante eu tive mais certeza, e a cada dia que passa esse sentimento cresce exponencialmente. Pois é, sou um grande idiota, mas é isso.
+                Depois que li as cartas então, meu Deus. Por isso senhorita, preciso lhe dizer que:
+
+            </p>
+            <button type="button" onclick="teamo()"class="btn8" id="btn8">CLICA AQUI</button>
+            <h2 class="neon-text" id="teamo">EU TE AMO<br><br>AMO-TE<br><br>ARDENTEMENTE</h2>
+
 
 </body>  
 
@@ -441,6 +501,11 @@
         titulotext1.style.display = "block";
         var btn = document.getElementById("btn2");
         btn.style.display = "flex";
+
+        window.scrollBy({
+          top: 300, // Quantidade de pixels para rolar para baixo
+          behavior: 'smooth' // Ativa a rolagem suave
+        });
       }
 
       function mostrarTexto2() {
@@ -450,6 +515,10 @@
         titulotext1.style.display = "block";
         var btn = document.getElementById("btn3");
         btn.style.display = "flex";
+        window.scrollBy({
+          top: 400, // Quantidade de pixels para rolar para baixo
+          behavior: 'smooth' // Ativa a rolagem suave
+        });
       }
 
       function mostrarTexto3() {
@@ -459,6 +528,10 @@
         titulotext1.style.display = "block";
         var btn = document.getElementById("btn4");
         btn.style.display = "flex";
+        window.scrollBy({
+          top: 400, // Quantidade de pixels para rolar para baixo
+          behavior: 'smooth' // Ativa a rolagem suave
+        });
       }
 
       function mostrarTexto4() {
@@ -468,6 +541,10 @@
         titulotext1.style.display = "block";
         var btn = document.getElementById("btn5");
         btn.style.display = "flex";
+        window.scrollBy({
+          top: 400, // Quantidade de pixels para rolar para baixo
+          behavior: 'smooth' // Ativa a rolagem suave
+        });
       }
 
       function mostrarTexto5() {
@@ -477,6 +554,10 @@
         titulotext1.style.display = "block";
         var btn = document.getElementById("btn6");
         btn.style.display = "flex";
+        window.scrollBy({
+          top: 400, // Quantidade de pixels para rolar para baixo
+          behavior: 'smooth' // Ativa a rolagem suave
+        });
       }
 
       function mostrarTexto6() {
@@ -486,6 +567,10 @@
         titulotext1.style.display = "block";
         var btn = document.getElementById("btn7");
         btn.style.display = "flex";
+        window.scrollBy({
+          top: 400, // Quantidade de pixels para rolar para baixo
+          behavior: 'smooth' // Ativa a rolagem suave
+        });
       }
 
       function mostrarTexto7() {
@@ -495,6 +580,20 @@
         titulotext1.style.display = "block";
         var btn = document.getElementById("btn8");
         btn.style.display = "flex";
+        window.scrollBy({
+          top: 400, // Quantidade de pixels para rolar para baixo
+          behavior: 'smooth' // Ativa a rolagem suave
+        });
+      }
+
+      function teamo() {
+        var elementoTexto1 = document.getElementById("teamo");
+        elementoTexto1.style.display = "block";
+        window.scrollBy({
+          top: 400, // Quantidade de pixels para rolar para baixo
+          behavior: 'smooth' // Ativa a rolagem suave
+        });
+
       }
 </script>
 </html>
